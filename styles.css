@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
 
+/* globales */
+
 *{
     padding: 0px;
     margin: 0px;
     text-decoration: none;
-    color: black;
+    color:  rgb(61, 61, 61);
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+
+/* imagen */
 .foto {
     display: block;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 91vh;
     margin: 0 auto;
     position: relative;
     z-index: 2;
@@ -21,17 +25,27 @@
     /* max-height: 100vh; */
     
 }
+
+/* contenedor principal */
+
 .hero{
     /* background-color: rgb(233, 231, 218); */
     background-color: rgb(233, 231, 218); 
-    max-height: 100%;
+    max-height: 100vh;
     max-width: 100%;
 }
 .hero a{
     height: 30px;
     width: 100px;
 }
-.bar{
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* barra de navegacion */
+
+nav{
     display: flex;
     justify-content: space-evenly;
     font-family: 'Source Sans Pro', sans-serif; 
@@ -42,61 +56,129 @@
 
 }
 
-a:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+/* primer caja */
 
 .box1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 270px;
+    height: 6.25rem;
+    width: 18.125rem;
     background-color: rgb(216, 214, 204);
-    position: absolute;
+    position: relative;
     left: 29vw;
-    bottom: 70vh;
+    bottom: 80vh;
     z-index: 1;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
 }
 .box1 i{
-    font-size: 40px;
+    font-size: 2rem;
+    align-items: center;
 }
 .box1 a{
-    margin-right: 40px;
+    margin-right: 4rem;
+    text-align: center;
+    cursor: pointer;
 }
+
+
+/* caja del medio */
 
 .box2 {
     display: grid;
-    grid-template-columns: 50% 50%;
-    width: 80%;
+    grid-template-columns: 50% 50% ;
     position: absolute;
-    left: 10%;
     bottom: 45vh;
 }
 
-.b21 p{
+/* caja del medio parte izquierda */
+.b21{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
     background-color: rgb(61, 61, 61);
-    color: white;
-    padding: 10px 10px;
+    
+}
+.b21 p{
+    color:  rgb(233, 231, 218);
+    font-size: 1.1rem;
+    font-weight: 400;
     margin-left: 0 auto;
+    max-width: 30%;
 }
 
-.b22 p{
-    font-weight: 700;
-    opacity: 0.5;
-}
+/* caja del medio parte derecha */
+
 .b22{
-    margin-left: 28%;
+    background-color: rgb(216, 214, 204);
+    font-size: 1.3rem;
+    
 }
+.b22 h2{
+    display: flex;
+    margin-left: 8rem;
+    position: absolute;
+    left: 55rem;
+    top: 2.5rem;
+    z-index: 1;
+    
+}
+.b22 p{
+    color:  rgb(233, 231, 218);
+    font-size: 3rem;
+    opacity: 0.6;
+    position: relative
+    z-index: 0;
+}
+
+/* ultima caja */
+.box3{
+    background-color: rgb(61, 61, 61);
+    height: 15vh;
+    width:16vw;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 20vh;
+    left: 55vw;
+    
+}
+.box3 h3{
+    color:  rgb(233, 231, 218);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.box3 i{
+    font-size: 1.5rem;
+    color:  rgb(233, 231, 218);
+}
+
+/* Inicio del footer y sus 3 bloques */
+
 .foot{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     position: relative;
     height: 5vh;
     z-index: 3;
-    /* bottom: 5vh; */
+    bottom: 29vh;
+    font-size: 25px;
+}
+.foot i{
+    font-size: 40px;
+}
+.foot h3{
+    font-size: 50px;
+}
+.f2 h3 ,.f2 p{
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
