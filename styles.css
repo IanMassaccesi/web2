@@ -175,10 +175,13 @@ nav{
 .foot h3{
     font-size: 50px;
 }
-.f2 h3 ,.f2 p{
+.f2 h3 {
+    color: white;
+    font-weight: 400;
+}
+.f2 p{
     color: white;
 }
-
 ::-webkit-scrollbar {
     display: none;
 }
